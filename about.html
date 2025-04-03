@@ -69,6 +69,28 @@
 
         .team-content {
             padding: 25px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+        }
+
+        .team-photo {
+            width: 200px;
+            height: 200px;
+            border-radius: 10px;
+            overflow: hidden;
+            flex-shrink: 0;
+        }
+
+        .team-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .team-info {
+            flex: 1;
+            min-width: 250px;
         }
 
         .team-content h3 {
@@ -177,10 +199,24 @@
             <div class="about-grid">
                 <div class="team-card">
                     <div class="team-content">
-                        <h3>Kirandeep Singh</h3>
-                        <span class="team-position">Founder & Managing Director</span>
-                        <p>With over a decade of experience in infrastructure finance and renewable energy, Kirandeep founded Saur Capital to address the growing need for specialized financial advisory services in these sectors.</p>
-                        <p>His extensive background includes successful roles in investment banking, project development, and financial consulting, with a particular focus on renewable energy projects across India and international markets.</p>
+                        <div class="team-photo">
+                            <img src="images/KDS-DP.jpg" alt="Kirandeep Singh - Founder & Managing Director">
+                        </div>
+                        <div class="team-info">
+                            <h3>Kirandeep Singh</h3>
+                            <span class="team-position">Founder & Managing Director</span>
+                            <p>With 18+ years of experience in infrastructure financing, project investments, corporate strategy, and M&A, Kirandeep founded Saur Capital to address the growing need for specialized financial advisory services in these sectors.</p>
+                            <p>His extensive background includes successful roles at SBI Capital Markets, L&T Infrastructure Finance, and Reliance Capital, with a particular focus on renewable energy projects across India and international markets.</p>
+                            <p>Kirandeep was also a core management team member at SolarArise, a leading solar IPP in India, where he contributed significantly to the company's growth and success.</p>
+                            <div style="margin-top: 15px;">
+                                <strong>Education & Certifications:</strong>
+                                <ul style="list-style-type: disc; margin-left: 20px; margin-top: 5px;">
+                                    <li>MBA in Finance, IIT Kharagpur</li>
+                                    <li>Certified in Sustainability & Climate Risk (GARP)</li>
+                                    <li>Certified in Sustainable Finance (University of Cambridge)</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
